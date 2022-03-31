@@ -1,1 +1,1 @@
-rootProject.name = "_name_-Student"
+rootProject.name = "FOP-2022-HProjektB-Student"

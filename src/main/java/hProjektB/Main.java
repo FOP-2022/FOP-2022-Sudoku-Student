@@ -1,4 +1,4 @@
-package h_id_;
+package hProjektB;
 
 /**
  * Main entry point in executing the program.
