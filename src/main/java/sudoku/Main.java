@@ -1,4 +1,4 @@
-package hProjektB;
+package sudoku;
 
 /**
  * Main entry point in executing the program.
@@ -11,6 +11,7 @@ public class Main {
      * @param args program arguments, currently ignored
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        final Board board = new Board(new EmptyGridGenerator(), new GridCheckerImpl(), new GridPrinterImpl());
+        board.run();
     }
 }

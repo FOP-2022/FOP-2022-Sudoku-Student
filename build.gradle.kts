@@ -7,7 +7,7 @@ plugins {
 }
 
 submit {
-    assignmentId = "hProjektB" // do not change assignmentId
+    assignmentId = "sudoku" // do not change assignmentId
     studentId = null // TU-ID  z.B. "ab12cdef"
     firstName = null
     lastName = null
@@ -31,7 +31,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("hProjektB.Main")
+    mainClass.set("sudoku.Main")
 }
 
 tasks {
@@ -51,7 +51,7 @@ tasks {
     }
     withType<JavaCompile> {
         options.encoding = "UTF-8"
-        sourceCompatibility = "17"
-        targetCompatibility = "17"
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
     }
 }

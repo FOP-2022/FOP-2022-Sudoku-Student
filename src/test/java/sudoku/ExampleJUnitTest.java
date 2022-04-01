@@ -1,4 +1,4 @@
-package hProjektB;
+package sudoku;
 
 import org.junit.jupiter.api.Test;
 
