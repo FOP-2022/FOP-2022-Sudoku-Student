@@ -2,7 +2,7 @@ package sudoku;
 
 public class EmptyGridGenerator implements GridGenerator {
     @Override
-    public int[][] createGrid() {
-        return new int[9][9];
+    public Grid createGrid() {
+        return new Grid(new int[9][9]);
     }
 }

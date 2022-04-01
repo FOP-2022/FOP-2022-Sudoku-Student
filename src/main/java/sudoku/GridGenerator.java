@@ -1,5 +1,5 @@
 package sudoku;
 
 interface GridGenerator {
-    int[][] createGrid();
+    Grid createGrid();
 }

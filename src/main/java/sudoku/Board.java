@@ -1,13 +1,13 @@
 package sudoku;
 
 import java.util.Scanner;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Board {
 
     // 9x9 grid
-    private final int[][] grid;
+    private final Grid grid;
     private final GridChecker gridChecker;
     private final GridPrinter gridPrinter;
 
@@ -24,18 +24,14 @@ public class Board {
     public void run() {
         final Scanner in = new Scanner(System.in);
         while (true) {
-            if (checkGridFinished()) {
+            if (grid.isFinished()) {
                 checkGrid();
                 break;
             }
             gridPrinter.print(grid);
-            // TODO H3: Parse user input & update grid
+            // TODO: H4 Parse user input & update grid
             break; // remove after implemented
         }
-    }
-
-    private boolean checkGridFinished() {
-        return Stream.of(grid).flatMapToInt(IntStream::of).noneMatch(i -> i == 0);
     }
 
     private void checkGrid() {

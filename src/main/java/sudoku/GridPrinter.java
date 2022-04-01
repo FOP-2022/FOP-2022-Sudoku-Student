@@ -1,5 +1,5 @@
 package sudoku;
 
 public interface GridPrinter {
-    void print(int[][] grid);
+    void print(Grid grid);
 }
