@@ -9,7 +9,14 @@ import java.util.stream.Stream;
  */
 public class Grid {
 
+    /**
+     * The numbers of the sudoku grid.
+     */
     private final int[][] data;
+
+    /**
+     * The fields which may not be changed.
+     */
     private final boolean[][] permanent;
 
     public Grid(final int[][] data) {
