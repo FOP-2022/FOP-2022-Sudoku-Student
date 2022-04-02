@@ -21,5 +21,13 @@ public class GridPrinterImpl implements GridPrinter {
     @Override
     public void print(final Grid grid) {
         // TODO H1: Print grid
+
+        // examples of box-drawing characters with colors:
+        // if your terminal does not support colors, you do not need to use them
+        System.out.println(toAnsi("┏ ━ ┳ ━ ┓", Ansi::fgRed, Ansi::bold));
+        System.out.println(toAnsi("┃   ┃   ┃", Ansi::fgYellow, Ansi::bold));
+        System.out.println(toAnsi("┣ ━ ╋ ━ ┫", Ansi::fgGreen, Ansi::bold));
+        System.out.println(toAnsi("┃   ┃   ┃", Ansi::fgBlue, Ansi::bold));
+        System.out.println(toAnsi("┗ ━ ┻ ━ ┛", Ansi::fgMagenta, Ansi::bold));
     }
 }
