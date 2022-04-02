@@ -22,6 +22,7 @@ public class GridPrinterImpl implements GridPrinter {
     public void print(final Grid grid) {
         // TODO H1: Print grid
 
+        // you may use colors to e.g. draw permanent numbers as red
         // examples of box-drawing characters with colors:
         // if your terminal does not support colors, you do not need to use them
         System.out.println(toAnsi("┏ ━ ┳ ━ ┓", Ansi::fgRed, Ansi::bold));
